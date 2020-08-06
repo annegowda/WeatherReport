@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestExcution]">
+  <parameter name="TestName" value="ApptempTest"/>
+  <parameter name="city" value="Chennai"/>
+  <parameter name="TempVarience" value="10"/>
+  <parameter name="HumidityVarience" value="20"/>
+  <test name="ApptempTest1596657039434">
+    <parameter name="TestName" value="ApptempTest"/>
+    <parameter name="city" value="Bengaluru"/>
+    <parameter name="TempVarience" value="2"/>
+    <parameter name="HumidityVarience" value="10"/>
+    <classes>
+      <class name="tests.ApptempTest"/>
+    </classes>
+  </test> <!-- ApptempTest1596657039434 -->
+  <test name="ApptempTest1596657039438">
+    <parameter name="TestName" value="ApptempTest"/>
+    <parameter name="city" value="Chennai"/>
+    <parameter name="TempVarience" value="10"/>
+    <parameter name="HumidityVarience" value="20"/>
+    <classes>
+      <class name="tests.ApptempTest"/>
+    </classes>
+  </test> <!-- ApptempTest1596657039438 -->
+  <test name="ApptempTest1596657039434(failed)">
+    <parameter name="TestName" value="ApptempTest"/>
+    <parameter name="city" value="Bengaluru"/>
+    <parameter name="TempVarience" value="2"/>
+    <parameter name="HumidityVarience" value="10"/>
+    <classes>
+      <class name="tests.ApptempTest">
+        <methods>
+          <include name="defaultBeforeSuite"/>
+          <include name="teardownbrowser"/>
+          <include name="teardownbrowser"/>
+          <include name="WeatherTest" invocation-numbers="0"/>
+          <include name="defaultBeforeClass"/>
+          <include name="defaultBeforeClass"/>
+          <include name="defaultAfterSuite"/>
+        </methods>
+      </class> <!-- tests.ApptempTest -->
+    </classes>
+  </test> <!-- ApptempTest1596657039434(failed) -->
+  <test name="ApptempTest1596657039438(failed)">
+    <parameter name="TestName" value="ApptempTest"/>
+    <parameter name="city" value="Chennai"/>
+    <parameter name="TempVarience" value="10"/>
+    <parameter name="HumidityVarience" value="20"/>
+    <classes>
+      <class name="tests.ApptempTest">
+        <methods>
+          <include name="defaultBeforeSuite"/>
+          <include name="teardownbrowser"/>
+          <include name="teardownbrowser"/>
+          <include name="WeatherTest" invocation-numbers="0"/>
+          <include name="defaultBeforeClass"/>
+          <include name="defaultBeforeClass"/>
+          <include name="defaultAfterSuite"/>
+        </methods>
+      </class> <!-- tests.ApptempTest -->
+    </classes>
+  </test> <!-- ApptempTest1596657039438(failed) -->
+</suite> <!-- Failed suite [TestExcution] -->

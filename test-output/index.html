@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestExcution">
+              <span class="suite-name border-failed">TestExcution</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestExcution">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestExcution">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestExcution">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestExcution">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestExcution">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestExcution">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestExcution">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestExcution" class="hide-methods failed suite-TestExcution"> (hide)</a> <!-- hide-methods failed suite-TestExcution -->
+                      <a href="#" panel-name="suite-TestExcution" class="show-methods failed suite-TestExcution"> (show)</a> <!-- show-methods failed suite-TestExcution -->
+                    </span>
+                    <div class="method-list-content failed suite-TestExcution">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestExcution" title="tests.ApptempTest" hash-for-method="WeatherTest(Bengaluru, 2, 10)">WeatherTest(Bengaluru, 2, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestExcution" title="tests.ApptempTest" hash-for-method="WeatherTest(Chennai, 10, 20)">WeatherTest(Chennai, 10, 20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestExcution -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestExcution" class="panel TestExcution">
+          <div class="suite-TestExcution-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ApptempTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WeatherTest(Bengaluru, 2, 10)">
+                  </a> <!-- WeatherTest(Bengaluru, 2, 10) -->
+                  <span class="method-name">WeatherTest</span>
+                  <span class="parameters">(Bengaluru, 2, 10)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.ApptempTest.WeatherTest(ApptempTest.java:50)
+	at com.core.Runnerclass.main(Runnerclass.java:63)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WeatherTest(Chennai, 10, 20)">
+                  </a> <!-- WeatherTest(Chennai, 10, 20) -->
+                  <span class="method-name">WeatherTest</span>
+                  <span class="parameters">(Chennai, 10, 20)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-TQEA3MJ&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51568}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: de91fa42c6cb27ecc8543e1ee0cf997f
+*** Element info: {Using=css selector, value=.notnow}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:683)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at com.ndtv.pages.NDTVHomepage.Click_on_NoThanks(NDTVHomepage.java:56)
+	at tests.ApptempTest.WeatherTest(ApptempTest.java:27)
+	at com.core.Runnerclass.main(Runnerclass.java:63)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestExcution-class-failed -->
+        </div> <!-- panel TestExcution -->
+        <div panel-name="test-xml-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestExcution&quot;&gt;
+  &lt;test name=&quot;ApptempTest1596657039434&quot;&gt;
+    &lt;parameter name=&quot;TestName&quot; value=&quot;ApptempTest&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Bengaluru&quot;/&gt;
+    &lt;parameter name=&quot;TempVarience&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;HumidityVarience&quot; value=&quot;10&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ApptempTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ApptempTest1596657039434 --&gt;
+  &lt;test name=&quot;ApptempTest1596657039438&quot;&gt;
+    &lt;parameter name=&quot;TestName&quot; value=&quot;ApptempTest&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Chennai&quot;/&gt;
+    &lt;parameter name=&quot;TempVarience&quot; value=&quot;10&quot;/&gt;
+    &lt;parameter name=&quot;HumidityVarience&quot; value=&quot;20&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ApptempTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ApptempTest1596657039438 --&gt;
+  &lt;test name=&quot;ApptempTest1596657039434(failed)&quot;&gt;
+    &lt;parameter name=&quot;TestName&quot; value=&quot;ApptempTest&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Bengaluru&quot;/&gt;
+    &lt;parameter name=&quot;TempVarience&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;HumidityVarience&quot; value=&quot;10&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ApptempTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;defaultBeforeSuite&quot;/&gt;
+          &lt;include name=&quot;teardownbrowser&quot;/&gt;
+          &lt;include name=&quot;teardownbrowser&quot;/&gt;
+          &lt;include name=&quot;WeatherTest&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;defaultBeforeClass&quot;/&gt;
+          &lt;include name=&quot;defaultBeforeClass&quot;/&gt;
+          &lt;include name=&quot;defaultAfterSuite&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.ApptempTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ApptempTest1596657039434(failed) --&gt;
+  &lt;test name=&quot;ApptempTest1596657039438(failed)&quot;&gt;
+    &lt;parameter name=&quot;TestName&quot; value=&quot;ApptempTest&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Chennai&quot;/&gt;
+    &lt;parameter name=&quot;TempVarience&quot; value=&quot;10&quot;/&gt;
+    &lt;parameter name=&quot;HumidityVarience&quot; value=&quot;20&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ApptempTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;defaultBeforeSuite&quot;/&gt;
+          &lt;include name=&quot;teardownbrowser&quot;/&gt;
+          &lt;include name=&quot;teardownbrowser&quot;/&gt;
+          &lt;include name=&quot;WeatherTest&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;defaultBeforeClass&quot;/&gt;
+          &lt;include name=&quot;defaultBeforeClass&quot;/&gt;
+          &lt;include name=&quot;defaultAfterSuite&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.ApptempTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ApptempTest1596657039438(failed) --&gt;
+&lt;/suite&gt; &lt;!-- TestExcution --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestExcution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ApptempTest1596657039434 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ApptempTest1596657039438 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ApptempTest1596657039434(failed) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ApptempTest1596657039438(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestExcution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestExcution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestExcution');
+function tableData_TestExcution() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'WeatherTest')
+data.setCell(0, 2, 'tests.ApptempTest')
+data.setCell(0, 3, 100110);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'WeatherTest')
+data.setCell(1, 2, 'tests.ApptempTest')
+data.setCell(1, 3, 19376);
+window.suiteTableData['TestExcution']= { tableData: data, tableDiv: 'times-div-TestExcution'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestExcution">
+              </div> <!-- times-div-TestExcution -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestExcution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestExcution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ApptempTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">defaultBeforeSuite(org.testng.TestRunner@35eee641)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">defaultBeforeClass(org.testng.TestRunner@eed890d)</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WeatherTest(Bengaluru, 2, 10)</span>
+                <span class="method-start">16673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardownbrowser</span>
+                <span class="method-start">36049 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">defaultBeforeClass(org.testng.TestRunner@35eee641)</span>
+                <span class="method-start">36166 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WeatherTest(Chennai, 10, 20)</span>
+                <span class="method-start">45111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardownbrowser</span>
+                <span class="method-start">145221 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">defaultAfterSuite(org.testng.TestRunner@35eee641)</span>
+                <span class="method-start">149248 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
