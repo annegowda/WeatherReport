@@ -12,7 +12,7 @@ import org.testng.xml.XmlTest;
 
 import com.google.gson.JsonObject;
 
-/*the class init the data factory based on the data factory params TestNG XML create Programmatically and will execute*/
+/*the class init the data factory based on the data factory params, TestNG XML create Programmatically and will execute*/
 
 public class Runnerclass {
 	
